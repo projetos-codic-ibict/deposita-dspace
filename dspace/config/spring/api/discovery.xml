@@ -200,6 +200,9 @@
                 <!-- <ref bean="searchFilterHasGeospatialMetadata"/> -->
                 <ref bean="searchFilterEntityType"/>
                 <ref bean="searchFilterAccessStatus" />
+                <ref bean="searchFilterCNPq" />
+                <ref bean="searchFilterInstituition" />
+                
             </list>
         </property>
         <!-- Set TagCloud configuration per discovery configuration -->
@@ -223,6 +226,9 @@
                 <ref bean="searchFilterIsPublicationOfJournalIssueRelation"/>
                 <ref bean="searchFilterIsJournalOfPublicationRelation"/>
                 <ref bean="searchFilterGeospatialPoint"/>
+                <ref bean="searchFilterCNPq" />
+                <ref bean="searchFilterInstituition" />
+                <ref bean="searchFilterType" />
             </list>
         </property>
         <!--The sort filters for the discovery search-->
@@ -243,7 +249,8 @@
         <property name="defaultFilterQueries">
             <list>
                 <!--Only find items, communities and collections-->
-                <value>(search.resourcetype:Item AND latestVersion:true) OR search.resourcetype:Collection OR search.resourcetype:Community</value>
+                <!-- <value>search.resourcetype:Item AND latestVersion:true</value> -->
+                <value>(search.resourcetype:Item AND latestVersion:true) OR search.resourcetype\:Collection OR search.resourcetype:Community</value>
                 <value>-withdrawn:true AND -discoverable:false</value>
             </list>
         </property>
@@ -385,6 +392,8 @@
                 <ref bean="searchFilterIssued" />
                 <ref bean="searchFilterContentInOriginalBundle"/>
                 <ref bean="searchFilterEntityType"/>
+                <ref bean="searchFilterCNPq" />
+                <ref bean="searchFilterInstituition" />
             </list>
         </property>
         <!-- Set TagCloud configuration per discovery configuration -->
@@ -405,6 +414,8 @@
                 <ref bean="searchFilterIsOrgUnitOfPublicationRelation"/>
                 <ref bean="searchFilterIsPublicationOfJournalIssueRelation"/>
                 <ref bean="searchFilterIsJournalOfPublicationRelation"/>
+                <ref bean="searchFilterCNPq" />
+                <ref bean="searchFilterInstituition" />
             </list>
         </property>
         <!--The sort filters for the discovery search-->
@@ -426,6 +437,7 @@
             <list>
                 <!--Only find items, communities and collections-->
                 <!-- NOTE: NOT filtered on latestVersion = true -->
+                <!-- <value>search.resourcetype:Item AND latestVersion:true</value> -->
                 <value>search.resourcetype:Item OR search.resourcetype:Collection OR search.resourcetype:Community</value>
                 <value>-withdrawn:true AND -discoverable:false</value>
             </list>
@@ -2633,6 +2645,33 @@
         <property name="isOpenByDefault" value="true"/>
         <property name="pageSize" value="10"/>
         <property name="exposeMinAndMaxValue" value="true"/>
+    </bean>
+
+    <bean id="searchFilterCNPq"
+        class="org.dspace.discovery.configuration.HierarchicalSidebarFacetConfiguration">
+        <property name="indexFieldName" value="cnpq" />
+        <property name="metadataFields">
+            <list>
+                <value>dc.subject.cnpq</value>
+            </list>
+        </property>
+        <property name="facetLimit" value="10" />
+        <property name="sortOrderSidebar" value="COUNT" />
+        <property name="sortOrderFilterPage" value="COUNT" />
+        <property name="splitter" value="::" />
+    </bean>
+
+    <bean id="searchFilterInstituition"
+        class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="name" />
+        <property name="metadataFields">
+            <list>
+                <value>dc.publisher</value>
+            </list>
+        </property>
+        <property name="facetLimit" value="10" />
+        <property name="sortOrderSidebar" value="COUNT" />
+        <property name="sortOrderFilterPage" value="COUNT" />
     </bean>
 
     <bean id="searchFilterEntityType" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
