@@ -199,9 +199,10 @@
                 <ref bean="searchFilterContentInOriginalBundle"/>
                 <!-- <ref bean="searchFilterHasGeospatialMetadata"/> -->
                 <ref bean="searchFilterEntityType"/>
-                <ref bean="searchFilterAccessStatus" />
+                <!-- <ref bean="searchFilterAccessStatus" /> -->
                 <ref bean="searchFilterCNPq" />
                 <ref bean="searchFilterInstituition" />
+                <ref bean="searchFilterType" />
                 
             </list>
         </property>
@@ -226,6 +227,7 @@
                 <ref bean="searchFilterIsPublicationOfJournalIssueRelation"/>
                 <ref bean="searchFilterIsJournalOfPublicationRelation"/>
                 <ref bean="searchFilterGeospatialPoint"/>
+                <ref bean="searchFilterLanguage" />
                 <ref bean="searchFilterCNPq" />
                 <ref bean="searchFilterInstituition" />
                 <ref bean="searchFilterType" />
@@ -414,6 +416,7 @@
                 <ref bean="searchFilterIsOrgUnitOfPublicationRelation"/>
                 <ref bean="searchFilterIsPublicationOfJournalIssueRelation"/>
                 <ref bean="searchFilterIsJournalOfPublicationRelation"/>
+                <ref bean="searchFilterLanguage" />
                 <ref bean="searchFilterCNPq" />
                 <ref bean="searchFilterInstituition" />
             </list>
@@ -2645,6 +2648,32 @@
         <property name="isOpenByDefault" value="true"/>
         <property name="pageSize" value="10"/>
         <property name="exposeMinAndMaxValue" value="true"/>
+    </bean>
+    
+    <bean id="searchFilterLanguage"
+        class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="language" />
+        <property name="metadataFields">
+            <list>
+                <value>dc.language</value>
+            </list>
+        </property>
+        <property name="facetLimit" value="10" />
+        <property name="sortOrderSidebar" value="COUNT" />
+        <property name="sortOrderFilterPage" value="COUNT" />
+    </bean>
+
+    <bean id="searchFilterKeyword"
+        class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="keyword" />
+        <property name="metadataFields">
+            <list>
+                <value>cnpq_keyword</value>
+            </list>
+        </property>
+        <property name="facetLimit" value="5" />
+        <property name="sortOrderSidebar" value="COUNT" />
+        <property name="sortOrderFilterPage" value="COUNT" />
     </bean>
 
     <bean id="searchFilterCNPq"
