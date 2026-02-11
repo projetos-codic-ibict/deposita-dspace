@@ -40,8 +40,8 @@
     <row>
         <field>
             <dc-schema>dc</dc-schema>
-            <dc-element>contributor</dc-element>
-            <dc-qualifier>author</dc-qualifier>
+            <dc-element>creator</dc-element>
+            <dc-qualifier></dc-qualifier>
             <repeatable>true</repeatable>
             <label>Nome completo*</label>
             <input-type>name</input-type>
@@ -56,8 +56,8 @@
     <row>
         <field>
             <dc-schema>dc</dc-schema>
-            <dc-element>contributor</dc-element>
-            <dc-qualifier>authorLattes</dc-qualifier>
+            <dc-element>creator</dc-element>
+            <dc-qualifier>Lattes</dc-qualifier>
             <repeatable>true</repeatable>
             <label>Identificador Lattes do Autor</label>
             <input-type>onebox</input-type>
@@ -70,8 +70,8 @@
     <row>
         <field>
             <dc-schema>dc</dc-schema>
-            <dc-element>contributor</dc-element>
-            <dc-qualifier>authorID</dc-qualifier>
+            <dc-element>creator</dc-element>
+            <dc-qualifier>ID</dc-qualifier>
             <repeatable>true</repeatable>
             <label>Identificador Orcid do Autor</label>
             <input-type>onebox</input-type>
@@ -86,7 +86,7 @@
         <field>
             <dc-schema>dc</dc-schema>
             <dc-element>contributor</dc-element>
-            <dc-qualifier>advisor</dc-qualifier>
+            <dc-qualifier>advisor1</dc-qualifier>
             <repeatable>true</repeatable>
             <label>Orientador(a)*</label>
             <input-type>name</input-type>
@@ -100,7 +100,7 @@
         <field>
             <dc-schema>dc</dc-schema>
             <dc-element>contributor</dc-element>
-            <dc-qualifier>advisorLattes</dc-qualifier>
+            <dc-qualifier>advisor1Lattes</dc-qualifier>
             <repeatable>true</repeatable>
             <label>Identificador Lattes do Orientador</label>
             <input-type>onebox</input-type>
@@ -114,7 +114,7 @@
         <field>
             <dc-schema>dc</dc-schema>
             <dc-element>contributor</dc-element>
-            <dc-qualifier>advisorID</dc-qualifier>
+            <dc-qualifier>advisor1ID</dc-qualifier>
             <repeatable>true</repeatable>
             <label>Identificador Orcid do Orientador</label>
             <input-type>onebox</input-type>
@@ -170,7 +170,7 @@
         <field>
             <dc-schema>dc</dc-schema>
             <dc-element>contributor</dc-element>
-            <dc-qualifier>referees1</dc-qualifier>
+            <dc-qualifier>referee1</dc-qualifier>
             <repeatable>true</repeatable>
             <label>Membro da Banca</label>
             <input-type>name</input-type>
@@ -184,7 +184,7 @@
         <field>
             <dc-schema>dc</dc-schema>
             <dc-element>contributor</dc-element>
-            <dc-qualifier>referees1Lattes</dc-qualifier>
+            <dc-qualifier>referee1Lattes</dc-qualifier>
             <repeatable>true</repeatable>
             <label>Identificador Lattes do Membro da Banca</label>
             <input-type>onebox</input-type>
@@ -198,7 +198,7 @@
         <field>
             <dc-schema>dc</dc-schema>
             <dc-element>contributor</dc-element>
-            <dc-qualifier>referees1ID</dc-qualifier>
+            <dc-qualifier>referee1ID</dc-qualifier>
             <repeatable>true</repeatable>
             <label>Identificador Orcid do Membro da Banca</label>
             <input-type>onebox</input-type>
