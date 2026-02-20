@@ -46,7 +46,7 @@
             <label>Nome completo*</label>
             <input-type>name</input-type>
             <hint>Informe o nome completo do pesquisador. O campo deve ser preenchido em ordem de citação e de acordo com o que foi informado no Currículo Lattes. Exemplo: João Gomes da Silva = Silva, João Gomes da.</hint>
-            <required></required>
+            <required>Informe o nome completo do pesquisador. O campo deve ser preenchido em ordem de citação e de acordo com o que foi informado no Currículo Lattes. Exemplo: João Gomes da Silva = Silva, João Gomes da.</required>
         </field>
 
        
@@ -91,7 +91,7 @@
             <label>Orientador(a)*</label>
             <input-type>name</input-type>
             <hint>Informe o nome completo do orientador(a). O campo deve ser preenchido em ordem de citação e de acordo com o que foi informado no Currículo Lattes.</hint>
-            <required></required>
+            <required>Informe o nome completo do orientador(a). O campo deve ser preenchido em ordem de citação e de acordo com o que foi informado no Currículo Lattes.</required>
         </field>
     </row>
 
@@ -172,10 +172,10 @@
             <dc-element>contributor</dc-element>
             <dc-qualifier>referee1</dc-qualifier>
             <repeatable>true</repeatable>
-            <label>Membro da Banca</label>
+            <label>Membros da Banca*</label>
             <input-type>name</input-type>
             <hint>Informe o nome completo do membro da banca. O campo deve ser preenchido em ordem de citação e de acordo com o que foi informado no Currículo Lattes.</hint>
-            <required></required>
+            <required>Informe o nome completo do membro da banca. O campo deve ser preenchido em ordem de citação e de acordo com o que foi informado no Currículo Lattes.</required>
         </field>
     </row>
 
@@ -219,7 +219,7 @@
                     <input-type>onebox</input-type>
                     <hint>Informe o nome completo, por extenso, da instituição seguido pela sigla entre parênteses. Exemplo de preenchimento: Universidade de Brasília (UnB).
                     </hint>
-                    <required></required>
+                    <required>Informe o nome completo, por extenso, da instituição do primeiro autor, seguido pela sigla entre parênteses. Exemplo de preenchimento: Universidade de Brasília (UnB).</required>
                 </field>
             </row>
             <row>
@@ -310,7 +310,7 @@
                     <input-type value-pairs-name="publisher_countries">dropdown</input-type>
                     <hint>Indique o país de origem da instituição.
                     </hint>
-                    <required></required>
+                    <required>Indique o país de origem da instituição.</required>
                 </field>
             </row>
         </form>
@@ -319,21 +319,21 @@
     <row>
         <field>
             <dc-schema>dc</dc-schema>
-            <dc-element>contributor</dc-element>
-            <dc-qualifier>author</dc-qualifier>
+            <dc-element>creator</dc-element>
+            <dc-qualifier></dc-qualifier>
             <repeatable>true</repeatable>
             <label>Nome completo*</label>
             <input-type>name</input-type>
             <hint>Informe o nome completo do pesquisador. O campo deve ser preenchido em ordem de citação e de acordo com o que foi informado no Currículo Lattes. Exemplo: João Gomes da Silva = Silva, João Gomes da.</hint>
-            <required></required>
+            <required>Informe o nome completo do pesquisador. O campo deve ser preenchido em ordem de citação e de acordo com o que foi informado no Currículo Lattes. Exemplo: João Gomes da Silva = Silva, João Gomes da.</required>
         </field>
     </row>
 
             <row>
                 <field>
                     <dc-schema>dc</dc-schema>
-                    <dc-element>contributor</dc-element>
-                    <dc-qualifier>authorLattes</dc-qualifier>
+                    <dc-element>creator</dc-element>
+                    <dc-qualifier>Lattes</dc-qualifier>
                     <repeatable>true</repeatable>
                     <label>Identificador Lattes</label>
                     <input-type>onebox</input-type>
@@ -345,8 +345,8 @@
             <row>
                 <field>
                     <dc-schema>dc</dc-schema>
-                    <dc-element>contributor</dc-element>
-                    <dc-qualifier>authorID</dc-qualifier>
+                    <dc-element>creator</dc-element>
+                    <dc-qualifier>ID</dc-qualifier>
                     <repeatable>true</repeatable>
                     <label>Identificador Orcid</label>
                     <input-type>onebox</input-type>
@@ -610,7 +610,7 @@
                     <input-type>onebox</input-type>
                     <hint>Informe o título conforme o documento original. O campo deve ser preenchido com caixa baixa, exceto siglas e nomes próprios. Exemplo: A história de João da Silva em Brasília-DF.
                     </hint>
-                    <required></required>
+                    <required>Informe o título conforme o documento original. O campo deve ser preenchido com caixa baixa, exceto siglas e nomes próprios. Exemplo: A história de João da Silva em Brasília-DF.</required>
                 </field>
             </row>
             <row>
@@ -636,7 +636,7 @@
                     <input-type value-pairs-name="common_iso_languages">dropdown</input-type>
                     <hint>Selecione o idioma original do documento.
                     </hint>
-                    <required></required>
+                    <required>Selecione o idioma original do documento.</required>
                 </field>
             </row>
             <row>
@@ -675,7 +675,7 @@
                     <input-type>tag</input-type>
                     <hint>Informe as palavras-chave do documento descrito. Tecle enter para inserir individualmente as palavras. Devem ser indicadas no mínimo 3 e no máximo 5 palavras-chave por idioma. Ex.: Palavra 1. Palavra 2. Palavra 3. Palavra 4. Palavra 5.  Sugere-se também o uso de termos em inglês.
                     </hint>
-                    <required></required>
+                    <required>Informe as palavras-chave do documento descrito. Tecle enter para inserir individualmente as palavras. Devem ser indicadas no mínimo 3 e no máximo 5 palavras-chave por idioma. Ex.: Palavra 1. Palavra 2. Palavra 3. Palavra 4. Palavra 5.  Sugere-se também o uso de termos em inglês.</required>
                 </field>
             </row>
             <row>
@@ -701,7 +701,7 @@
                     <input-type value-pairs-name="knowledge_area">dropdown</input-type>
                     <hint>Selecione a área do conhecimento correspondente de acordo com as grandes áreas do CNPq.
                     </hint>
-                    <required></required>
+                    <required>Selecione a área do conhecimento correspondente de acordo com as grandes áreas do CNPq.</required>
                 </field>
             </row>
             <row>
@@ -714,7 +714,7 @@
                     <input-type>date</input-type>
                     <hint>Informe o ano de publicação ou disponibilização do documento.
                     </hint>
-                    <required></required>
+                    <required>Informe o ano de publicação ou disponibilização do documento.</required>
                 </field>
             </row>
             <row>
@@ -812,7 +812,7 @@
                     <input-type>textarea</input-type>
                     <hint>Informe a referência bibliográfica do documento, conforme as instruções da ABNT/NBR 6023.
                     </hint>
-                    <required></required>
+                    <required>Informe a referência bibliográfica do documento, conforme as instruções da ABNT/NBR 6023.</required>
                 </field>
             </row>
             <row>
@@ -854,7 +854,7 @@
                     <input-type value-pairs-name="rights">dropdown</input-type>
                     <hint>Para que o Deposita possa disseminar sua produção científica, é necessário conceder o acesso aberto ao documento. Reserve um momento para ler os termos da licença disponíveis ao final do formulário.
                     </hint>
-                    <required></required>
+                    <required>Para que o Deposita possa disseminar sua produção científica, é necessário conceder o acesso aberto ao documento. Reserve um momento para ler os termos da licença disponíveis ao final do formulário.</required>
                 </field>
             </row>
         </form>
@@ -870,7 +870,7 @@
                     <input-type>onebox</input-type>
                     <hint>Informe o título conforme o documento original. O campo deve ser preenchido com caixa baixa, exceto siglas e nomes próprios. Exemplo: A história de João da Silva em Brasília-DF.
                     </hint>
-                    <required></required>
+                    <required>Informe o título conforme o documento original. O campo deve ser preenchido com caixa baixa, exceto siglas e nomes próprios. Exemplo: A história de João da Silva em Brasília-DF.</required>
                 </field>
             </row>
             <row>
@@ -896,7 +896,7 @@
                     <input-type value-pairs-name="common_iso_languages">dropdown</input-type>
                     <hint>Selecione o idioma original do documento.
                     </hint>
-                    <required></required>
+                    <required>Selecione o idioma original do documento.</required>
                 </field>
             </row>
             <row>
@@ -909,7 +909,7 @@
                     <input-type>textarea</input-type>
                     <hint>Informe o resumo conforme o documento original.
                     </hint>
-                    <required></required>
+                    <required>Informe o resumo conforme o documento original.</required>
                 </field>
             </row>
             <row>
@@ -922,7 +922,7 @@
                     <input-type>textarea</input-type>
                     <hint>Informe o resumo em outro idioma, preferencialmente o inglês.
                     </hint>
-                    <required></required>
+                    <required>Informe o resumo em outro idioma, preferencialmente o inglês.</required>
                 </field>
             </row>
             <row>
@@ -934,7 +934,7 @@
                     <label>Palavras-chave*</label>
                     <input-type>tag</input-type>
                     <hint>Informe as palavras-chave do documento descrito. Tecle enter para inserir individualmente as palavras. Devem ser indicadas no mínimo 3 e no máximo 5 palavras-chave por idioma. Ex.: Palavra 1. Palavra 2. Palavra 3. Palavra 4. Palavra 5.  Sugere-se também o uso de termos em inglês.</hint>
-                    <required></required>
+                    <required>Informe as palavras-chave do documento descrito. UMA PARA CADA CAMPO. Use o botão 'Adicionar'. Devem ser indicadas no mínimo 3 e no máximo 5 palavras-chave por idioma. EX. Palavra 1. Palavra 2. Palavra 3. Palavra 4. Palavra 5.  Sugere-se também o uso de termos em inglês.</required>
                 </field>
             </row>
             <row>
@@ -960,7 +960,7 @@
                     <input-type value-pairs-name="knowledge_area">dropdown</input-type>
                     <hint>Selecione a área do conhecimento correspondente de acordo com as grandes áreas do CNPq.
                     </hint>
-                    <required></required>
+                    <required>Selecione a área do conhecimento correspondente de acordo com as grandes áreas do CNPq.</required>
                 </field>
             </row>
             <row>
@@ -973,7 +973,7 @@
                     <input-type>date</input-type>
                     <hint>Informe o ano de publicação ou disponibilização do documento.
                     </hint>
-                    <required></required>
+                    <required>Informe o ano de publicação ou disponibilização do documento.</required>
                 </field>
             </row>
             <row>
@@ -1014,7 +1014,7 @@
                     <input-type>textarea</input-type>
                     <hint>Informe a referência bibliográfica do documento, conforme as instruções da ABNT/NBR 6023.
                     </hint>
-                    <required></required>
+                    <required>Informe a referência bibliográfica do documento, conforme as instruções da ABNT/NBR 6023.</required>
                 </field>
             </row>
             <row>
@@ -1053,7 +1053,7 @@
                     <input-type value-pairs-name="rights">dropdown</input-type>
                     <hint>Para que o Deposita possa disseminar sua produção científica, é necessário conceder o acesso aberto ao documento. Reserve um momento para ler os termos da licença disponíveis ao final do formulário.
                     </hint>
-                    <required></required>
+                    <required>Para que o Deposita possa disseminar sua produção científica, é necessário conceder o acesso aberto ao documento. Reserve um momento para ler os termos da licença disponíveis ao final do formulário.</required>
                 </field>
             </row>
         </form>
@@ -1069,7 +1069,7 @@
                     <input-type>onebox</input-type>
                     <hint>Informe o título conforme o documento original. O campo deve ser preenchido com caixa baixa, exceto siglas e nomes próprios. Exemplo: A história de João da Silva em Brasília-DF.
                     </hint>
-                    <required></required>
+                    <required>Informe o título conforme o documento original. O campo deve ser preenchido com caixa baixa, exceto siglas e nomes próprios. Exemplo: A história de João da Silva em Brasília-DF.</required>
                 </field>
             </row>
             <row>
@@ -1095,7 +1095,7 @@
                     <input-type value-pairs-name="common_iso_languages">dropdown</input-type>
                     <hint>Selecione o idioma original do documento.
                     </hint>
-                    <required></required>
+                    <required>Selecione o idioma original do documento.</required>
                 </field>
             </row>
             <row>
@@ -1108,7 +1108,7 @@
                     <input-type>textarea</input-type>
                     <hint>Informe o resumo conforme o documento original.
                     </hint>
-                    <required></required>
+                    <required>Informe o resumo conforme o documento original.</required>
                 </field>
             </row>
             <row>
@@ -1133,7 +1133,7 @@
                     <label>Palavras-chave*</label>
                     <input-type>tag</input-type>
                     <hint>Informe as palavras-chave do documento descrito. Tecle enter para inserir individualmente as palavras. Devem ser indicadas no mínimo 3 e no máximo 5 palavras-chave por idioma. Ex.: Palavra 1. Palavra 2. Palavra 3. Palavra 4. Palavra 5.  Sugere-se também o uso de termos em inglês.</hint>
-                    <required></required>
+                    <required>Informe as palavras-chave do documento descrito. O campo deve ser preenchido com caixa baixa, exceto siglas e nomes próprios. Exemplo: Palavra 1. Palavra 2. Palavra 3.</required>
                 </field>
             </row>
             <row>
@@ -1159,7 +1159,7 @@
                     <input-type value-pairs-name="knowledge_area">dropdown</input-type>
                     <hint>Selecione a área do conhecimento correspondente de acordo com as grandes áreas do CNPq.
                     </hint>
-                    <required></required>
+                    <required>Selecione a área do conhecimento correspondente de acordo com as grandes áreas do CNPq.</required>
                 </field>
             </row>
             <row>
@@ -1172,7 +1172,7 @@
                     <input-type>date</input-type>
                     <hint>Informe o ano de publicação ou disponibilização do documento.
                     </hint>
-                    <required></required>
+                    <required>Informe o ano de publicação ou disponibilização do documento.</required>
                 </field>
             </row>
             <row>
@@ -1185,7 +1185,7 @@
                     <input-type>onebox</input-type>
                     <hint>Informe o número de ISBN do livro.
                     </hint>
-                    <required></required>
+                    <required>Informe o número de ISBN do livro.</required>
                 </field>
             </row>
             <row>
@@ -1297,7 +1297,7 @@
                     <input-type value-pairs-name="rights">dropdown</input-type>
                     <hint>Para que o Deposita possa disseminar sua produção científica, é necessário conceder o acesso aberto ao documento. Reserve um momento para ler os termos da licença disponíveis ao final do formulário.
                     </hint>
-                    <required></required>
+                    <required>Para que o Deposita possa disseminar sua produção científica, é necessário conceder o acesso aberto ao documento. Reserve um momento para ler os termos da licença disponíveis ao final do formulário.</required>
                 </field>
             </row>
         </form>
@@ -1315,7 +1315,7 @@
                     campo deve ser preenchido com caixa baixa, exceto siglas e
                     nomes próprios. Exemplo: A história de João da Silva em
                     Brasília-DF.</hint>
-                    <required></required>
+                    <required>Informe o título conforme o documento original. O campo deve ser preenchido com caixa baixa, exceto siglas e nomes próprios. Exemplo: A história de João da Silva em Brasília-DF.</required>
                 </field>
             </row>
             <row>
@@ -1339,7 +1339,7 @@
                     <label>Idioma de publicação*</label>
                     <input-type value-pairs-name="common_iso_languages">dropdown</input-type>
                     <hint>Selecione o idioma original do documento.</hint>
-                    <required></required>
+                    <required>Selecione o idioma original do documento.</required>
                 </field>
             </row>
             <row>
@@ -1351,7 +1351,7 @@
                     <label>Resumo*</label>
                     <input-type>textarea</input-type>
                     <hint>Informe o resumo conforme o documento original. Informe ou elabore um resumo sobre o livro a ser depositado.</hint>
-                    <required></required>
+                    <required>Informe o resumo conforme o documento original. Informe ou elabore um resumo sobre o livro a ser depositado.</required>
                 </field>
             </row>
             <row>
@@ -1375,7 +1375,7 @@
                     <label>Palavras-chave*</label>
                     <input-type>tag</input-type>
                     <hint>Informe as palavras-chave do documento descrito. Tecle enter para inserir individualmente as palavras. Devem ser indicadas no mínimo 3 e no máximo 5 palavras-chave por idioma. Ex.: Palavra 1. Palavra 2. Palavra 3. Palavra 4. Palavra 5.  Sugere-se também o uso de termos em inglês.</hint>
-                    <required></required>
+                    <required>Informe as palavras-chave do documento descrito. UMA PARA CADA CAMPO. Use o botão 'Adicionar'. Devem ser indicadas no mínimo 3 e no máximo 5 palavras-chave por idioma. EX. Palavra 1. Palavra 2. Palavra 3. Palavra 4. Palavra 5.  Sugere-se também o uso de termos em inglês.</required>
                 </field>
             </row>
             <row>
@@ -1399,7 +1399,7 @@
                     <label>Área do conhecimento CNPq*</label>
                     <input-type value-pairs-name="knowledge_area">dropdown</input-type>
                     <hint>Selecione a área do conhecimento correspondente de acordo com as grandes áreas do CNPq.</hint>
-                    <required></required>
+                    <required>Selecione a área do conhecimento correspondente de acordo com as grandes áreas do CNPq.</required>
                 </field>
             </row>
             <row>
@@ -1411,7 +1411,7 @@
                     <label>Título do livro*</label>
                     <input-type>onebox</input-type>
                     <hint>Informe o título do livro em que o capítulo foi publicado.</hint>
-                    <required></required>
+                    <required>Informe o título do livro em que o capítulo foi publicado.</required>
                 </field>
             </row>
             <row>
@@ -1423,7 +1423,7 @@
                     <label>Ano de publicação*</label>
                     <input-type>date</input-type>
                     <hint>Informe o ano de publicação ou disponibilização do documento.</hint>
-                    <required></required>
+                    <required>Informe o ano de publicação ou disponibilização do documento.</required>
                 </field>
             </row>
             <row>
@@ -1435,7 +1435,7 @@
                     <label>ISBN*</label>
                     <input-type>onebox</input-type>
                     <hint>Informe o número de ISBN do livro.</hint>
-                    <required></required>
+                    <required>Informe o número de ISBN do livro.</required>
                 </field>
             </row>
             <row>
@@ -1514,7 +1514,7 @@
                     <label>Permissão de acesso*</label>
                     <input-type value-pairs-name="rights">dropdown</input-type>
                     <hint>Para que o Deposita possa disseminar sua produção científica, é necessário conceder o acesso aberto ao documento. Reserve um momento para ler os termos da licença disponíveis ao final do formulário.</hint>
-                    <required></required>
+                    <required>Para que o Deposita possa disseminar sua produção científica, é necessário conceder o acesso aberto ao documento. Reserve um momento para ler os termos da licença disponíveis ao final do formulário.</required>
                 </field>
             </row>
         </form>
@@ -1529,7 +1529,7 @@
                     <label>Título*</label>
                     <input-type>onebox</input-type>
                     <hint>Informe o título conforme o documento original. O campo deve ser preenchido com caixa baixa, exceto siglas e nomes próprios. Exemplo: A história de João da Silva em Brasília-DF.</hint>
-                    <required></required>
+                    <required>Informe o título conforme o documento original. O campo deve ser preenchido com caixa baixa, exceto siglas e nomes próprios. Exemplo: A história de João da Silva em Brasília-DF.</required>
                 </field>
             </row>
             <row>
@@ -1553,7 +1553,7 @@
                     <label>Idioma de publicação*</label>
                     <input-type value-pairs-name="common_iso_languages">dropdown</input-type>
                     <hint>Selecione o idioma original do documento.</hint>
-                    <required></required>
+                    <required>Selecione o idioma original do documento.</required>
                 </field>
             </row>
             <row>
@@ -1565,7 +1565,7 @@
                     <label>Resumo*</label>
                     <input-type>textarea</input-type>
                     <hint>Informe o resumo conforme o documento original.</hint>
-                    <required></required>
+                    <required>Informe o resumo conforme o documento original.</required>
                 </field>
             </row>
             <row>
@@ -1589,7 +1589,7 @@
                     <label>Palavras-chave*</label>
                     <input-type>tag</input-type>
                     <hint>Informe as palavras-chave do documento descrito. Tecle enter para inserir individualmente as palavras. Devem ser indicadas no mínimo 3 e no máximo 5 palavras-chave por idioma. Ex.: Palavra 1. Palavra 2. Palavra 3. Palavra 4. Palavra 5.  Sugere-se também o uso de termos em inglês.</hint>
-                    <required></required>
+                    <required>Informe as palavras-chave do documento descrito. UMA PARA CADA CAMPO. Use o botão 'Adicionar'. Devem ser indicadas no mínimo 3 e no máximo 5 palavras-chave por idioma. EX. Palavra 1. Palavra 2. Palavra 3. Palavra 4. Palavra 5.  Sugere-se também o uso de termos em inglês.</required>
                 </field>
             </row>
             <row>
@@ -1613,7 +1613,7 @@
                     <label>Área do conhecimento CNPq*</label>
                     <input-type value-pairs-name="knowledge_area">dropdown</input-type>
                     <hint>Selecione a área do conhecimento correspondente de acordo com as grandes áreas do CNPq.</hint>
-                    <required></required>
+                    <required>Selecione a área do conhecimento correspondente de acordo com as grandes áreas do CNPq.</required>
                 </field>
             </row>
             <row>
@@ -1625,7 +1625,7 @@
                     <label>Ano de publicação*</label>
                     <input-type>date</input-type>
                     <hint>Informe o ano de publicação ou disponibilização do documento.</hint>
-                    <required></required>
+                    <required>Informe o ano de publicação ou disponibilização do documento.</required>
                 </field>
             </row>
             <row>
@@ -1637,7 +1637,7 @@
                     <label>Título do evento*</label>
                     <input-type>onebox</input-type>
                     <hint>Informe o título do evento científico em que o documento foi apresentado. O título deve indicar o nome completo do evento, o número, o ano e a cidade em que ocorreu o evento em questão. Exemplo: Conferência Lusófona de Ciência Aberta, 13., 2022, Maputo.</hint>
-                    <required></required>
+                    <required>Informe o título do evento científico em que o documento foi apresentado.</required>
                 </field>
             </row>
             <row>
@@ -1648,8 +1648,8 @@
                     <repeatable>false</repeatable>
                     <label>Página do evento*</label>
                     <input-type>onebox</input-type>
-                    <hint>Informe a URL da página do evento em o trabalho foi apresentado.</hint>
-                    <required></required>
+                    <hint>Informe a URL da página do evento em que o trabalho foi apresentado.</hint>
+                    <required>Informe a URL da página do evento em que o trabalho foi apresentado.</required>
                 </field>
             </row>
             <row>
@@ -1700,7 +1700,7 @@
                     <label>Referência bibliográfica*</label>
                     <input-type>textarea</input-type>
                     <hint>Informe a referência bibliográfica do documento, conforme as instruções da ABNT/NBR 6023.</hint>
-                    <required></required>
+                    <required>Informe a referência bibliográfica do documento, conforme as instruções da ABNT/NBR 6023.</required>
                 </field>
             </row>
             <row>
@@ -1740,7 +1740,7 @@
                     <label>Permissão de acesso*</label>
                     <input-type value-pairs-name="rights">dropdown</input-type>
                     <hint>Para que o Deposita possa disseminar sua produção científica, é necessário conceder o acesso aberto ao documento. Reserve um momento para ler os termos da licença disponíveis ao final do formulário.</hint>
-                    <required></required>
+                    <required>Para que o Deposita possa disseminar sua produção científica, é necessário conceder o acesso aberto ao documento. Reserve um momento para ler os termos da licença disponíveis ao final do formulário.</required>
                 </field>
             </row>
         </form>
@@ -1755,7 +1755,7 @@
                     <label>Título*</label>
                     <input-type>onebox</input-type>
                     <hint>Informe o título conforme o documento original. O campo deve ser preenchido com caixa baixa, exceto siglas e nomes próprios. Exemplo: A história de João da Silva em Brasília-DF.</hint>
-                    <required></required>
+                    <required>Informe o título conforme o documento original. O campo deve ser preenchido com caixa baixa, exceto siglas e nomes próprios. Exemplo: A história de João da Silva em Brasília-DF.</required>
                 </field>
             </row>
             <row>
@@ -1779,7 +1779,7 @@
                     <label>Idioma de publicação*</label>
                     <input-type value-pairs-name="common_iso_languages">dropdown</input-type>
                     <hint>Selecione o idioma original do documento.</hint>
-                    <required></required>
+                    <required>Selecione o idioma original do documento.</required>
                 </field>
             </row>
             <row>
@@ -1791,7 +1791,7 @@
                     <label>Resumo*</label>
                     <input-type>textarea</input-type>
                     <hint>Informe o resumo conforme o documento original.</hint>
-                    <required></required>
+                    <required>Informe o resumo conforme o documento original.</required>
                 </field>
             </row>
             <row>
@@ -1803,7 +1803,7 @@
                     <label>Abstract</label>
                     <input-type>textarea</input-type>
                     <hint>Informe o resumo em outro idioma, preferencialmente o inglês.</hint>
-                    <required></required>
+                    <required>Informe o resumo em outro idioma, preferencialmente o inglês.</required>
                 </field>
             </row>
             <row>
@@ -1815,7 +1815,7 @@
                     <label>Palavras-chave*</label>
                     <input-type>tag</input-type>
                     <hint>Informe as palavras-chave do documento descrito. Tecle enter para inserir individualmente as palavras. Devem ser indicadas no mínimo 3 e no máximo 5 palavras-chave por idioma. Ex.: Palavra 1. Palavra 2. Palavra 3. Palavra 4. Palavra 5.  Sugere-se também o uso de termos em inglês.</hint>
-                    <required></required>
+                    <required>Informe as palavras-chave do documento descrito. UMA PARA CADA CAMPO. Use o botão 'Adicionar'. Devem ser indicadas no mínimo 3 e no máximo 5 palavras-chave por idioma. EX. Palavra 1. Palavra 2. Palavra 3. Palavra 4. Palavra 5.  Sugere-se também o uso de termos em inglês.</required>
                 </field>
             </row>
             <row>
@@ -1839,7 +1839,7 @@
                     <label>Área do conhecimento CNPq*</label>
                     <input-type value-pairs-name="knowledge_area">dropdown</input-type>
                     <hint>Selecione a área do conhecimento correspondente de acordo com as grandes áreas do CNPq.</hint>
-                    <required></required>
+                    <required>Selecione a área do conhecimento correspondente de acordo com as grandes áreas do CNPq.</required>
                 </field>
             </row>
         </form>
@@ -1854,7 +1854,7 @@
                     <label>Ano de publicação*</label>
                     <input-type>date</input-type>
                     <hint>Informe o ano de publicação ou disponibilização do documento.</hint>
-                    <required></required>
+                    <required>Informe o ano de publicação ou disponibilização do documento.</required>
                 </field>
             </row>
             <row>
@@ -1891,7 +1891,7 @@
                     <label>Referência bibliográfica*</label>
                     <input-type>textarea</input-type>
                     <hint>Informe a referência bibliográfica do documento, conforme as instruções da ABNT/NBR 6023.</hint>
-                    <required></required>
+                    <required>Informe a referência bibliográfica do documento, conforme as instruções da ABNT/NBR 6023.</required>
                 </field>
             </row>
             <row>
@@ -1932,7 +1932,7 @@
                     <label>Permissão de acesso*</label>
                     <input-type value-pairs-name="rights">dropdown</input-type>
                     <hint>Para que o Deposita possa disseminar sua produção científica, é necessário conceder o acesso aberto ao documento. Reserve um momento para ler os termos da licença disponíveis ao final do formulário.</hint>
-                    <required></required>
+                    <required>Para que o Deposita possa disseminar sua produção científica, é necessário conceder o acesso aberto ao documento. Reserve um momento para ler os termos da licença disponíveis ao final do formulário.</required>
                 </field>
             </row>
         </form>
