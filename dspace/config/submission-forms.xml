@@ -225,6 +225,17 @@
             <row>
                 <field>
                     <dc-schema>dc</dc-schema>
+                    <dc-element>publisher</dc-element>
+                    <dc-qualifier>initials</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Sigla da instituição</label>
+                    <input-type>onebox</input-type>
+                    <hint>Informe a sigla da instituição.</hint>
+                    <required></required>
+                </field>
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
                     <dc-element>identifier</dc-element>
                     <dc-qualifier>publisherurl</dc-qualifier>
                     <repeatable>false</repeatable>
