@@ -233,6 +233,7 @@
                     <hint>Informe a sigla da instituição.</hint>
                     <required></required>
                 </field>
+            </row>
             <row>
                 <field>
                     <dc-schema>dc</dc-schema>
