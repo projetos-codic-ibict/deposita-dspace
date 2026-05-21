@@ -824,7 +824,6 @@
                     <input-type>textarea</input-type>
                     <hint>Informe a referência bibliográfica do documento, conforme as instruções da ABNT/NBR 6023.
                     </hint>
-                    <required>Informe a referência bibliográfica do documento, conforme as instruções da ABNT/NBR 6023.</required>
                 </field>
             </row>
             <row>
@@ -1026,7 +1025,7 @@
                     <input-type>textarea</input-type>
                     <hint>Informe a referência bibliográfica do documento, conforme as instruções da ABNT/NBR 6023.
                     </hint>
-                    <required>Informe a referência bibliográfica do documento, conforme as instruções da ABNT/NBR 6023.</required>
+                    
                 </field>
             </row>
             <row>
@@ -1712,7 +1711,7 @@
                     <label>Referência bibliográfica</label>
                     <input-type>textarea</input-type>
                     <hint>Informe a referência bibliográfica do documento, conforme as instruções da ABNT/NBR 6023.</hint>
-                    <required>Informe a referência bibliográfica do documento, conforme as instruções da ABNT/NBR 6023.</required>
+                    
                 </field>
             </row>
             <row>
@@ -1903,7 +1902,7 @@
                     <label>Referência bibliográfica</label>
                     <input-type>textarea</input-type>
                     <hint>Informe a referência bibliográfica do documento, conforme as instruções da ABNT/NBR 6023.</hint>
-                    <required>Informe a referência bibliográfica do documento, conforme as instruções da ABNT/NBR 6023.</required>
+                    
                 </field>
             </row>
             <row>
