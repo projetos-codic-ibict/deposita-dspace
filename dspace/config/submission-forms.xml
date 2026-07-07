@@ -826,7 +826,7 @@
                     </hint>
                 </field>
             </row>
-            <row>
+            <!-- <row>
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>identifier</dc-element>
@@ -838,7 +838,7 @@
                     </hint>
                     <required></required>
                 </field>
-            </row>
+            </row> -->
         </form>
 
         <form name="article3">
@@ -1028,7 +1028,7 @@
                     
                 </field>
             </row>
-            <row>
+            <!-- <row>
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>identifier</dc-element>
@@ -1040,7 +1040,7 @@
                     </hint>
                     <required></required>
                 </field>
-            </row>
+            </row> -->
             <row>
                 <field>
                     <dc-schema>dc</dc-schema>
@@ -1269,7 +1269,7 @@
                     <required></required>
                 </field>
             </row>
-            <row>
+            <!-- <row>
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>identifier</dc-element>
@@ -1281,7 +1281,7 @@
                     </hint>
                     <required></required>
                 </field>
-            </row>
+            </row> -->
         </form>
 
         <form name="book3">
@@ -1488,7 +1488,7 @@
                     <required></required>
                 </field>
             </row>
-            <row>
+            <!-- <row>
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>identifier</dc-element>
@@ -1499,7 +1499,7 @@
                     <hint>Informe como citar o documento. Use as normas de acordo com a área, por exemplo: ABNT, APA, Vancouver.</hint>
                     <required></required>
                 </field>
-            </row>
+            </row> -->
         </form>
 
         <form name="bookPart3">
@@ -1714,7 +1714,7 @@
                     
                 </field>
             </row>
-            <row>
+            <!-- <row>
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>identifier</dc-element>
@@ -1725,7 +1725,7 @@
                     <hint>Informe como citar o documento. Use as normas de acordo com a área, por exemplo: ABNT, APA, Vancouver.</hint>
                     <required></required>
                 </field>
-            </row>
+            </row> -->
         </form>
 
         <form name="conferenceObject3">
@@ -1905,7 +1905,7 @@
                     
                 </field>
             </row>
-            <row>
+            <!-- <row>
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>identifier</dc-element>
@@ -1916,7 +1916,7 @@
                     <hint>Informe como citar o documento. Use as normas de acordo com a área, por exemplo: ABNT, APA, Vancouver.</hint>
                     <required></required>
                 </field>
-            </row>
+            </row> -->
         </form>
 
         <form name="tese3">
@@ -2040,7 +2040,7 @@
                     <required></required>
                 </field>
             </row>
-            <row>
+            <!-- <row>
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>identifier</dc-element>
@@ -2051,7 +2051,7 @@
                     <hint>Referência bibliográfica do documento. Use as normas de acordo com a área, por exemplo: ABNT, APA, Vancouver.</hint>
                     <required></required>
                 </field>
-            </row>
+            </row> -->
             <row>
                 <field>
                     <dc-schema>dc</dc-schema>
