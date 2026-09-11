@@ -415,7 +415,7 @@
             <step id="tese2"/>
             <step id="publisher"/>
             <step id="course"/>
-            <step id="program"/>
+            <!-- <step id="program"/> -->
             <step id="tese3"/>
             <step id="dark-identifier-form"/>
             <step id="license"/>
