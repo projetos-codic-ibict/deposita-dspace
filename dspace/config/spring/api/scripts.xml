@@ -14,6 +14,10 @@
         <property name="dspaceRunnableClass" value="org.dspace.discovery.IndexClient"/>
     </bean>
 
+    <bean id="doi-ui" class="org.dspace.scripts.configuration.DOIOrganiserUIConfiguration">
+        <property name="description" value="Gerencia a reserva, registro e atualização de DOIs" />
+        <property name="dspaceRunnableClass" value="org.dspace.scripts.DOIOrganiserUI" />
+    </bean>
     <bean id="metadata-import" class="org.dspace.app.bulkedit.MetadataImportCliScriptConfiguration">
         <property name="description" value="Import metadata after batch editing" />
         <property name="dspaceRunnableClass" value="org.dspace.app.bulkedit.MetadataImportCLI"/>
