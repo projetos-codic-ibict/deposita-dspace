@@ -806,7 +806,7 @@
                     <repeatable>false</repeatable>
                     <label>Identificador persistente</label>
                     <input-type>onebox</input-type>
-                    <hint>Informe o link do identificador persistente do documento, caso exista. Exemplos: DOI (Digital Object Identifier), Handle, URN, PURL, ARK. 
+                    <hint>Informe o link do identificador persistente do documento, caso exista. Exemplos: DOI (Digital Object Identifier), Handle, URN, PURL, ARK. Caso o documento não possua um DOI previamente registrado, o Deposita providenciará sua atribuição.
                     </hint>
                     <required></required>
                 </field>
@@ -1009,7 +1009,7 @@
                     <label>Identificador persistente
                     </label>
                     <input-type>onebox</input-type>
-                    <hint>Informe o link do identificador persistente do documento, caso exista. Exemplos: DOI (Digital Object Identifier), Handle, URN, PURL, ARK. 
+                    <hint>Informe o link do identificador persistente do documento, caso exista. Exemplos: DOI (Digital Object Identifier), Handle, URN, PURL, ARK. Caso o documento não possua um DOI previamente registrado, o Deposita providenciará sua atribuição.
                     </hint>
                     <required></required>
                 </field>
@@ -1248,7 +1248,7 @@
                     <label>Identificador persistente
                     </label>
                     <input-type>onebox</input-type>
-                    <hint>Informe o link do identificador persistente do documento, caso exista. Exemplos: DOI (Digital Object Identifier), Handle, URN, PURL, ARK. 
+                    <hint>Informe o link do identificador persistente do documento, caso exista. Exemplos: DOI (Digital Object Identifier), Handle, URN, PURL, ARK. Caso o documento não possua um DOI previamente registrado, o Deposita providenciará sua atribuição.
                     </hint>
                     <required></required>
                 </field>
@@ -1469,7 +1469,7 @@
                     <repeatable>false</repeatable>
                     <label>Identificador persistente</label>
                     <input-type>onebox</input-type>
-                    <hint>Informe o link do identificador persistente do documento, caso exista. Exemplos: DOI (Digital Object Identifier), Handle, URN, PURL, ARK. </hint>
+                    <hint>Informe o link do identificador persistente do documento, caso exista. Exemplos: DOI (Digital Object Identifier), Handle, URN, PURL, ARK. Caso o documento não possua um DOI previamente registrado, o Deposita providenciará sua atribuição.</hint>
                     <required></required>
                 </field>
             </row>
@@ -1695,7 +1695,7 @@
                     <repeatable>false</repeatable>
                     <label>Identificador persistente</label>
                     <input-type>onebox</input-type>
-                    <hint>Informe o link do identificador persistente do documento, caso exista. Exemplos: DOI (Digital Object Identifier), Handle, URN, PURL, ARK. </hint>
+                    <hint>Informe o link do identificador persistente do documento, caso exista. Exemplos: DOI (Digital Object Identifier), Handle, URN, PURL, ARK. Caso o documento não possua um DOI previamente registrado, o Deposita providenciará sua atribuição.</hint>
                     <required></required>
                 </field>
             </row>
@@ -1888,7 +1888,7 @@
                     <repeatable>false</repeatable>
                     <label>Identificador persistente</label>
                     <input-type>onebox</input-type>
-                    <hint>Informe o link do identificador persistente do documento, caso exista. Exemplos: DOI (Digital Object Identifier), Handle, URN, PURL, ARK. </hint>
+                    <hint>Informe o link do identificador persistente do documento, caso exista. Exemplos: DOI (Digital Object Identifier), Handle, URN, PURL, ARK. Caso o documento não possua um DOI previamente registrado, o Deposita providenciará sua atribuição.</hint>
                     <required></required>
                 </field>
             </row>
